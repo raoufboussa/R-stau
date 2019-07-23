@@ -1,0 +1,14 @@
+le systeme doit permettre au client de s'authentifier.
+le systeme doit permettre au client de demander un plat.
+le systeme doit permettre au client de consulter le menu.
+le systeme doit permettre au client d'annuler ou changer un plat.
+le systeme doit permettre au admin de gerer le stock.
+
+
+
+
+
+
+paramettre suplémentaire:
+
+-statistique pour l'admin

@@ -1,0 +1,12 @@
+ul li{
+    float:left;
+    list-style:none;
+    margin-right:20px;
+    }
+    ul li a{
+     text-decoration:none;
+    }
+    .active
+    {
+        background-color:rgb(226, 226, 226);
+    }
