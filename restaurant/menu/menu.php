@@ -1,3 +1,6 @@
+<?php session_start(); 
+$tab_images;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +36,12 @@
             });
         </script>
 </head>
+<style>
+	body {
+    	background: url(image/back.png) top left repeat, url(images/back.png) top left no-repeat ;
+	}
+</style>
+
 <body>
 <div class="container">
             <nav> 
@@ -46,56 +55,40 @@
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                         </form> 
-        </nav>
+            </nav>
             <!--le contenue de chaques categories des plats -->
                 
             <div id="myTabContent" class="tab-content col-md-12">
                         <!--les plats traditionnelle-->
                         <div class="tab-pane" id="Traditionnelle">
-                                <h2>Card Image</h2>
-                                <p>Image at the top (card-img-top):</p>
-                                <div class="card" style="width:400px">
-                                    <img class="card-img-top" src="img_avatar1.png" alt="Card image" style="width:100%">
-                                    <div class="card-body">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                    </div>
-                                </div>
-                                <br>
-                                
-                                <p>Image at the bottom (card-img-bottom):</p>
-                                <div class="card" style="width:400px">
-                                    <div class="card-body">
-                                    <h4 class="card-title">Jane Doe</h4>
-                                    <p class="card-text">Some example text some example text. Jane Doe is an architect and engineer</p>
-                                    <a href="#" class="btn btn-primary">See Profile</a>
-                                    </div>
-                                    <img class="card-img-bottom" src="img_avatar6.png" alt="Card image" style="width:100%">
-                                </div>              
-                                <?php 
-                                echo 'raouf';
-                                ?>
+                               <?php include 'traditionnelle.php';?>       
                         </div>
 
                         <!--les plats traditionnelle-->
                         <div class="tab-pane" id="Base">
-                            
+                        <?php include 'base.php';?>  
                         </div>
 
                         <!--les plats traditionnelle-->
                         <div class="tab-pane" id="Dissert">
-                            
+                        <?php include 'dissert.php';?>  
                         </div>
 
                         <!--les plats traditionnelle-->
                         <div class="tab-pane" id="Boisson">
-                            
+                        <?php include 'boisson.php';?>  
                         </div>
                 </div>
-</div>
 
 
+
+
+  </div>
+<footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-center">
+      <small>Copyright &copy; Your Website</small>
+    </div>
+</footer>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>

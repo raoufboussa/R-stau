@@ -10,3 +10,7 @@ ul li{
     {
         background-color:rgb(226, 226, 226);
     }
+    #sticky-footer {
+        flex-shrink: none;
+      }
+      
